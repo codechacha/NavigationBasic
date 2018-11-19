@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@+id/london_screen">
+
+    <fragment
+            android:id="@+id/london_screen"
+            android:name="com.codechacha.navigation.LondonScreen"
+            android:label="London screen"
+            tools:layout="@layout/fragment_london_screen">
+        <action
+                android:id="@+id/action_go_to_paris_from_london"
+                app:destination="@id/paris_screen"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        <action
+                android:id="@+id/action_go_to_italy_from_london"
+                app:destination="@id/italy_screen"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/paris_screen"
+            android:name="com.codechacha.navigation.ParisScreen"
+            android:label="Paris screen"
+            tools:layout="@layout/fragment_paris_screen">
+        <action
+                android:id="@+id/action_go_to_london_from_paris"
+                app:destination="@id/london_screen"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        <action
+                android:id="@+id/action_go_to_italy_from_paris"
+                app:destination="@id/italy_screen"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/italy_screen"
+            android:name="com.codechacha.navigation.ItalyScreen"
+            android:label="Italy screen"
+            tools:layout="@layout/fragment_italy_screen">
+        <action
+                android:id="@+id/action_go_to_paris_from_italy"
+                app:destination="@id/paris_screen"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        <action
+                android:id="@+id/action_go_to_london_from_italy"
+                app:destination="@+id/london_screen"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+
+</navigation>

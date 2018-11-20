@@ -15,10 +15,10 @@ class LondonScreen : Fragment() {
         val view = inflater.inflate(R.layout.fragment_london_screen, container, false)
 
         view.findViewById<Button>(R.id.to_paris_from_london).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_go_to_paris_from_london)
+            Navigation.findNavController(view).navigate(R.id.action_london_screen_to_paris_screen)
         }
         view.findViewById<Button>(R.id.to_italy_from_london).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_go_to_italy_from_london)
+            Navigation.findNavController(view).navigate(R.id.action_london_screen_to_italy_screen)
         }
 
         return view

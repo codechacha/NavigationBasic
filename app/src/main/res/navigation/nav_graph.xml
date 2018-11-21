@@ -9,18 +9,6 @@
             android:name="com.codechacha.navigation.LondonScreen"
             android:label="London screen"
             tools:layout="@layout/fragment_london_screen">
-        <action android:id="@+id/action_london_screen_to_paris_screen"
-                app:destination="@id/paris_screen"
-                app:popEnterAnim="@anim/slide_in_left"
-                app:popExitAnim="@anim/slide_out_right"
-                app:enterAnim="@anim/slide_in_right"
-                app:exitAnim="@anim/slide_out_left"/>
-        <action android:id="@+id/action_london_screen_to_italy_screen"
-                app:destination="@id/italy_screen"
-                app:popEnterAnim="@anim/slide_in_left"
-                app:popExitAnim="@anim/slide_out_right"
-                app:enterAnim="@anim/slide_in_right"
-                app:exitAnim="@anim/slide_out_left"/>
     </fragment>
 
     <fragment
@@ -28,18 +16,6 @@
             android:name="com.codechacha.navigation.ParisScreen"
             android:label="Paris screen"
             tools:layout="@layout/fragment_paris_screen">
-        <action android:id="@+id/action_paris_screen_to_italy_screen"
-                app:destination="@id/italy_screen"
-                app:popEnterAnim="@anim/slide_in_left"
-                app:popExitAnim="@anim/slide_out_right"
-                app:enterAnim="@anim/slide_in_right"
-                app:exitAnim="@anim/slide_out_left"/>
-        <action android:id="@+id/action_paris_screen_to_london_screen"
-                app:destination="@id/london_screen"
-                app:popEnterAnim="@anim/slide_in_left"
-                app:popExitAnim="@anim/slide_out_right"
-                app:enterAnim="@anim/slide_in_right"
-                app:exitAnim="@anim/slide_out_left"/>
     </fragment>
 
     <fragment
@@ -47,18 +23,27 @@
             android:name="com.codechacha.navigation.ItalyScreen"
             android:label="Italy screen"
             tools:layout="@layout/fragment_italy_screen">
-        <action android:id="@+id/action_italy_screen_to_paris_screen"
-                app:destination="@id/paris_screen"
-                app:popEnterAnim="@anim/slide_in_left"
-                app:popExitAnim="@anim/slide_out_right"
-                app:enterAnim="@anim/slide_in_right"
-                app:exitAnim="@anim/slide_out_left"/>
-        <action android:id="@+id/action_italy_screen_to_london_screen"
-                app:destination="@id/london_screen"
-                app:popEnterAnim="@anim/slide_in_left"
-                app:popExitAnim="@anim/slide_out_right"
-                app:enterAnim="@anim/slide_in_right"
-                app:exitAnim="@anim/slide_out_left"/>
     </fragment>
+
+    <action android:id="@+id/action_global_london_screen"
+            app:destination="@id/london_screen"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+    <action android:id="@+id/action_global_paris_screen"
+            app:destination="@id/paris_screen"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+    <action android:id="@+id/action_global_italy_screen"
+            app:destination="@id/italy_screen"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
 
 </navigation>
